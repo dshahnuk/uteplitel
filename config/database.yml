@@ -17,8 +17,8 @@ test:
 production:
   adapter: postgresql
   encoding: utf8
-  database: cse_production
-  username: cse
+  database: uteplitel_production
+  username: root
   pool: <%= ENV['RAILS_MAX_THREADS'] %>
   password: <%= ENV['CSE_DATABASE_PASSWORD'] %>
   reaping_frequency: <%= ENV['DEAD_DB_CONNECTION_TIMEOUT'] %>
