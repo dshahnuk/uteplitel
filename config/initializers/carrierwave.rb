@@ -8,7 +8,6 @@ CarrierWave.configure do |config|
       region:                ENV['AWS_REGION'] || 'us-east-1'
     }
     config.fog_directory  = ENV['AWS_BUCKET']
-    # config.fog_public     = false
     config.fog_attributes = { 'Cache-Control' => "max-age=#{365.day.to_i}" }
   end
 end
