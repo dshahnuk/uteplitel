@@ -1,0 +1,25 @@
+default: &default
+  adapter: postgresql
+  encoding: utf8
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS", 5) %>
+  host: <%= ENV.fetch('db_host', 'localhost') %>
+  username: <%= ENV.fetch('db_username', 'postgres') %>
+  password: <%= ENV.fetch('db_password', '1') %>
+
+development:
+  <<: *default
+  database: uteplitel
+
+test:
+  <<: *default
+  database: cse_test
+
+production:
+  adapter: postgresql
+  encoding: utf8
+  database: cse_production
+  username: cse
+  pool: <%= ENV['RAILS_MAX_THREADS'] %>
+  password: <%= ENV['CSE_DATABASE_PASSWORD'] %>
+  reaping_frequency: <%= ENV['DEAD_DB_CONNECTION_TIMEOUT'] %>
+  dead_connection_timeout: <%= ENV['DEAD_DB_CONNECTION_TIMEOUT'] %>
