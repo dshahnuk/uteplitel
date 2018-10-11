@@ -37,7 +37,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 # gem 'kms', path: '../cms-engine'
-gem 'kms', git: 'https://github.com/dshahnuk/cms-engine'
+gem 'kms', git: 'https://github.com/dshahnuk/cms-engine', ref: '2c653cb'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

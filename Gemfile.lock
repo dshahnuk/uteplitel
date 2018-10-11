@@ -1,6 +1,7 @@
 GIT
   remote: https://github.com/dshahnuk/cms-engine
   revision: 2c653cb9e15b62d83b0be55740cd94104695b6eb
+  ref: 2c653cb
   specs:
     kms (1.2.1)
       active_model_serializers
