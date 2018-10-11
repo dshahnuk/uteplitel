@@ -1,5 +1,6 @@
-PATH
-  remote: ../cms-engine
+GIT
+  remote: https://github.com/dshahnuk/cms-engine
+  revision: 0f0c91508a7ee31d91c18d3220198e79b618759f
   specs:
     kms (1.2.1)
       active_model_serializers
